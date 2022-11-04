@@ -60,6 +60,7 @@ savePallete();
 
 // quadro com 25px
 
+
 let board = document.getElementById('pixel-board');
 
     for(i=0; i<25; i=i+1){
@@ -68,4 +69,9 @@ let board = document.getElementById('pixel-board');
     board.appendChild(pixel);
     }
 
+
+// cor preta como cor inicial
+
+let blackSelected = document.getElementsByClassName('color')[0];
+blackSelected.classList.add('selected');
 

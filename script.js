@@ -46,7 +46,13 @@ function savePallete(){
     let buttonGenerateColor = document.getElementById('button-random-color');
 
     buttonGenerateColor.addEventListener('click',function(){
-        let colors = document.getElementsByClassName('color');
+        let color1 = document.getElementsByClassName('color')[0].style.backgroundColor;
+        let color2 = document.getElementsByClassName('color')[1].style.backgroundColor;
+        let color3 = document.getElementsByClassName('color')[2].style.backgroundColor;
+        let color4 = document.getElementsByClassName('color')[3].style.backgroundColor;
+
+
+        localStorage.setItem('colorPalette', `${color1}, ${color2}, ${color3}, ${color4}`);        
     })
 }
 
@@ -61,3 +67,5 @@ let board = document.getElementById('pixel-board');
     pixel.className = 'pixel'
     board.appendChild(pixel);
     }
+
+

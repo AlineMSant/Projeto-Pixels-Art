@@ -39,3 +39,25 @@ function generateColor(){
 
 generateColor();
 
+
+//salva no localStorage chave colorPalette
+
+function savePallete(){
+    let buttonGenerateColor = document.getElementById('button-random-color');
+
+    buttonGenerateColor.addEventListener('click',function(){
+        let colors = document.getElementsByClassName('color');
+    })
+}
+
+savePallete();
+
+// quadro com 25px
+
+let board = document.getElementById('pixel-board');
+
+    for(i=0; i<25; i=i+1){
+    let pixel = document.createElement('div');
+    pixel.className = 'pixel'
+    board.appendChild(pixel);
+    }

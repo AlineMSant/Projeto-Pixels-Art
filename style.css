@@ -1,8 +1,28 @@
+body{
+    background-color: rgb(34, 34, 34);
+}
+
+h1{
+    color:white;
+}
+
+#color-palette{
+    margin-left: 20px;
+
+}
+
 .color{
     border: black solid 1px;
     display: inline-block;
     width: 40px;
     height: 40px;
+}
+
+button{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 48px;
 }
 
 #pixel-board{

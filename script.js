@@ -75,3 +75,47 @@ let board = document.getElementById('pixel-board');
 let blackSelected = document.getElementsByClassName('color')[0];
 blackSelected.classList.add('selected');
 
+// cria função para alterar cor
+
+function selectColorPalllete(){
+    let divSelected = document.getElementById('color-palette');
+
+    divSelected.addEventListener('click', function (event){
+        event.target.className = 'color selected';
+
+        let color1 = document.getElementsByClassName('color')[0];
+        let color2 = document.getElementsByClassName('color')[1];
+        let color3 = document.getElementsByClassName('color')[2];
+        let color4 = document.getElementsByClassName('color')[3];  
+
+             
+         
+            if(color4.className == 'color selected'){
+                color1.classList.remove('selected');
+                color2.classList.remove('selected');
+                color3.classList.remove('selected');
+            }
+            event.target.className = 'color selected';
+            if(color3.className == 'color selected'){
+                color1.classList.remove('selected');
+                color2.classList.remove('selected');
+                color4.classList.remove('selected');
+            }
+            event.target.className = 'color selected';
+            if(color2.className == 'color selected'){
+                color1.classList.remove('selected');
+                color3.classList.remove('selected');
+                color4.classList.remove('selected');
+            }
+            event.target.className = 'color selected';
+            if(color1.className == 'color selected'){
+                color2.classList.remove('selected');
+                color3.classList.remove('selected');
+                color4.classList.remove('selected');
+            }
+            event.target.className = 'color selected';
+    })
+}
+
+selectColorPalllete();
+

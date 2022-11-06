@@ -1,18 +1,18 @@
 // 4 cores distintas, 
 
-function colorPalette(){
+function colorPalette(parametro){
     let palette = document.getElementById('color-palette');
 
-    for(let i=0; i<4; i=i+1){
+    for(let i=0; i<parametro; i=i+1){
     let color = document.createElement('div');
     color.className = 'color';
     palette.appendChild(color);
     }    
 }
 
-// primeira cor sempre preta 
+colorPalette(4);
 
-colorPalette();
+// primeira cor sempre preta 
 
 function firstColor(){
     let colorOne = document.getElementsByClassName('color')[0];
@@ -156,3 +156,25 @@ function pixelBoardWhite(){
 }
 
 pixelBoardWhite();
+
+
+// requisito bonus 13
+
+function boardSize(){
+    let = totalPixels = 0;
+    let inputValue = document.getElementById('board-size').value;
+    totalPixels = (inputValue * inputValue) -25;
+    let board = document.getElementById('pixel-board');
+
+    for(i=0; i<totalPixels; i=i+1){
+    let pixel = document.createElement('div');
+    pixel.className = 'pixel'
+    board.appendChild(pixel);
+    }
+    
+    board.style.gridTemplateColumns = `repeat(${inputValue}, 42px)`;
+
+}
+
+boardSize();
+

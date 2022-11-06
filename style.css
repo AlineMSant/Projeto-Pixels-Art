@@ -25,9 +25,18 @@ h1{
     margin-left: 48px;
 }
 
+#input-button{
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+#board-size{
+    width: 50px;
+}
+
 #pixel-board{
     display: grid;
-    grid-template-columns: 42px 42px 42px 42px 42px;
+    grid-template-columns: repeat(5, 42px);
 }
 
 .pixel{

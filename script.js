@@ -119,3 +119,29 @@ function selectColorPalllete(){
 
 selectColorPalllete();
 
+// altera cor board
+
+function colorPixelBoard(){
+    let pixelBoard2 = document.getElementById('pixel-board');
+
+    pixelBoard2.addEventListener('click', function (event){
+
+        let colorPallete1 = document.getElementsByClassName('color')[0];
+        let colorPallete2 = document.getElementsByClassName('color')[1];
+        let colorPallete3 = document.getElementsByClassName('color')[2];
+        let colorPallete4 = document.getElementsByClassName('color')[3];
+
+        if(colorPallete1.className == 'color selected'){
+            event.target.style.backgroundColor = colorPallete1.style.backgroundColor;
+        }else if(colorPallete2.className == 'color selected'){
+            event.target.style.backgroundColor = colorPallete2.style.backgroundColor;
+        }else if(colorPallete3.className == 'color selected'){
+            event.target.style.backgroundColor = colorPallete3.style.backgroundColor;
+        }else if(colorPallete4.className == 'color selected'){
+            event.target.style.backgroundColor = colorPallete4.style.backgroundColor;
+        }
+        
+    })
+}
+
+colorPixelBoard();

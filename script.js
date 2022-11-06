@@ -160,6 +160,19 @@ pixelBoardWhite();
 
 // requisito bonus 13
 
+function minInput(){
+    let inputBoard = document.getElementById('board-size');
+
+    inputBoard.addEventListener('keyup', function (event){
+        if(event.target.value === '0'){
+            event.target.value = '1';
+        }
+    })
+}
+
+minInput()
+
+
 function boardSize(){
     let = totalPixels = 0;
     let inputValue = document.getElementById('board-size').value;
@@ -174,6 +187,9 @@ function boardSize(){
     
     board.style.gridTemplateColumns = `repeat(${inputValue}, 42px)`;
 
+    if(inputValue.length === 0){
+        alert('Board inválido!');
+    }
 }
 
 boardSize();

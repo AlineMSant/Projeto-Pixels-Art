@@ -145,3 +145,14 @@ function colorPixelBoard(){
 }
 
 colorPixelBoard();
+
+// retornar o quadro de pixel para branco
+
+function pixelBoardWhite(){
+    let clearBoard = document.getElementsByClassName('pixel');
+    for(i=0; i<clearBoard.length; i=i+1){
+        clearBoard[i].style.backgroundColor = 'white';
+    }
+}
+
+pixelBoardWhite();

@@ -1,4 +1,3 @@
-
 // 4 cores distintas, 
 
 function colorPalette(parametro){
@@ -211,21 +210,3 @@ function boardSize(){
 }
 
 boardSize();
-
-// carrega pagina com cores gravadas no local storage
-
-// function openWindow (){
-//     let pallet1 = document.getElementsByClassName('color')[0];
-//     pallet1.style.backgroundColor = localStorage.getItem('colorPalette');
-
-//     let pallet2 = document.getElementsByClassName('color')[1];
-//     pallet2.style.backgroundColor = localStorage.getItem('colorPalette2');
-
-//     let pallet3 = document.getElementsByClassName('color')[2];
-//     pallet3.style.backgroundColor = localStorage.getItem('colorPalette3');
-
-//     let pallet4 = document.getElementsByClassName('color')[3];
-//     pallet4.style.backgroundColor = localStorage.getItem('colorPalette4');
-// } 
-
-// openWindow();

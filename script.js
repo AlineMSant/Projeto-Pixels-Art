@@ -191,7 +191,7 @@ maxInput()
 
 
 function boardSize(){
-    let = totalPixels = 0;
+    let totalPixels = 0;
     let inputValue = document.getElementById('board-size').value;
     totalPixels = (inputValue * inputValue) -25;
     let board = document.getElementById('pixel-board');

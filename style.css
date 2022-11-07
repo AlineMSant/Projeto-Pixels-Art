@@ -1,55 +1,54 @@
-body{
-    background-color: rgb(34, 34, 34);
+body {
+background-color: rgb(34, 34, 34);
 }
 
-h1{
-    color:white;
+h1 {
+color: white;
 }
 
-#color-palette{
-    margin-left: 20px;
-
+#color-palette {
+margin-left: 20px;
 }
 
-.color{
+.color {
     border: black solid 1px;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
+display: inline-block;
+width: 40px;
+height: 40px;
 }
 
-#button-random-color{
-    margin-bottom: 10px;
-    margin-top: 10px;
-    text-align: center;
-    margin-left: 48px;
+#button-random-color {
+margin-bottom: 10px;
+margin-top: 10px;
+text-align: center;
+margin-left: 48px;
 }
 
-#input-button{
-    margin-bottom: 10px;
-    margin-left: 42px;
+#input-button {
+margin-bottom: 10px;
+margin-left: 42px;
 }
 
-#board-size{
-    width: 70px;
+#board-size {
+width: 70px;
 }
 
-#pixel-board{
-    display: grid;
-    grid-template-columns: repeat(5, 42px);
+#pixel-board {
+display: grid;
+grid-template-columns: repeat(5, 42px);
 }
 
-.pixel{
-    background-color: white;
-    border: black solid 1px;
-    width: 40px;
-    height: 40px;
+.pixel {
+background-color: white;
+border: black solid 1px;
+width: 40px;
+height: 40px;
 }
 
-#clear-board{
-    margin-bottom: 10px;
-    margin-top: 10px;
-    text-align: center;
-    margin-left: 76px;
+#clear-board {
+margin-bottom: 10px;
+margin-top: 10px;
+text-align: center;
+margin-left: 76px;
 }
 

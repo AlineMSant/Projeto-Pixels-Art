@@ -1,3 +1,4 @@
+
 // 4 cores distintas, 
 
 function colorPalette(parametro){
@@ -52,11 +53,16 @@ function savePallete(){
         let color4 = document.getElementsByClassName('color')[3].style.backgroundColor;
 
 
-        localStorage.setItem('colorPalette', `${color1}, ${color2}, ${color3}, ${color4}`);        
+        localStorage.setItem('colorPalette', `${color1}`);
+        localStorage.setItem('colorPalette2', `${color2}`);   
+        localStorage.setItem('colorPalette3', `${color3}`);   
+        localStorage.setItem('colorPalette4', `${color4}`);           
     })
 }
 
 savePallete();
+
+
 
 // quadro com 25px
 
@@ -172,6 +178,18 @@ function minInput(){
 
 minInput()
 
+function maxInput(){
+    let inputBoard = document.getElementById('board-size');
+
+    inputBoard.addEventListener('keyup', function (event){
+        if(event.target.value > 50){
+            event.target.value = '50';
+        }
+    })
+}
+
+maxInput()
+
 
 function boardSize(){
     let = totalPixels = 0;
@@ -194,3 +212,20 @@ function boardSize(){
 
 boardSize();
 
+// carrega pagina com cores gravadas no local storage
+
+// function openWindow (){
+//     let pallet1 = document.getElementsByClassName('color')[0];
+//     pallet1.style.backgroundColor = localStorage.getItem('colorPalette');
+
+//     let pallet2 = document.getElementsByClassName('color')[1];
+//     pallet2.style.backgroundColor = localStorage.getItem('colorPalette2');
+
+//     let pallet3 = document.getElementsByClassName('color')[2];
+//     pallet3.style.backgroundColor = localStorage.getItem('colorPalette3');
+
+//     let pallet4 = document.getElementsByClassName('color')[3];
+//     pallet4.style.backgroundColor = localStorage.getItem('colorPalette4');
+// } 
+
+// openWindow();

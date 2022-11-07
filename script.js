@@ -1,7 +1,7 @@
-// 4 cores distintas, 
+//4 cores distintas
 
-function colorPalette(parametro){
-    let palette = document.getElementById('color-palette');
+function colorPalette(parametro) {
+  let palette = document.getElementById('color-palette');
 
     for(let i=0; i<parametro; i=i+1){
     let color = document.createElement('div');

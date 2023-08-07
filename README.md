@@ -8,8 +8,8 @@ Um editor de arte com pixels, onde os usuários poderão escolher cores em uma p
 2. Instale as dependências e inicie o projeto:
 ```bash
 npm install
-npm start
 ```
+Foi utilizada a extensão "Live Server" para rodar no navegador.
 
 ## Habilidades desenvolvidas:
 - HTML e CSS para a estrutura e estilo do editor de arte.
